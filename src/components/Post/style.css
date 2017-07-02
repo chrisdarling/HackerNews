@@ -1,0 +1,54 @@
+.hacker-news-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  overflow-x: hidden; }
+  .hacker-news-post-container .hacker-news-post {
+    width: 75%;
+    padding: 2rem;
+    background-color: #fff; }
+    .hacker-news-post-container .hacker-news-post h4 a {
+      text-decoration: none;
+      color: inherit; }
+    .hacker-news-post-container .hacker-news-post .__post-url {
+      font-size: 1.2rem; }
+    .hacker-news-post-container .hacker-news-post .__post-info a {
+      text-decoration: none;
+      color: #b92b27;
+      font-weight: 700; }
+  .hacker-news-post-container .hacker-news-comments {
+    width: 75%;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff; }
+    .hacker-news-post-container .hacker-news-comments .hacker-news-comment {
+      word-break: break-word;
+      width: 100%;
+      padding-left: 2rem; }
+      .hacker-news-post-container .hacker-news-comments .hacker-news-comment.first-level {
+        padding: 0; }
+      .hacker-news-post-container .hacker-news-comments .hacker-news-comment .open {
+        opacity: 1;
+        display: block; }
+      .hacker-news-post-container .hacker-news-comments .hacker-news-comment .close {
+        opacity: 0;
+        display: none; }
+      .hacker-news-post-container .hacker-news-comments .hacker-news-comment-user {
+        margin-top: 1rem; }
+        .hacker-news-post-container .hacker-news-comments .hacker-news-comment-user .collapse {
+          cursor: pointer; }
+        .hacker-news-post-container .hacker-news-comments .hacker-news-comment-user .user {
+          text-decoration: none;
+          font-weight: 700;
+          color: #b92b27; }
+      .hacker-news-post-container .hacker-news-comments .hacker-news-comment-content {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #d3d3d3; }
+  @media (max-width: 480px) {
+    .hacker-news-post-container .hacker-news-comments {
+      width: 100%; }
+    .hacker-news-post-container .hacker-news-post {
+      width: 100%; } }

@@ -1,0 +1,39 @@
+.hacker-news-post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 10rem;  
+    &-item {
+        display: flex;
+        width: 70vw;
+        padding: 2rem;
+        border-bottom: 1px solid #d3d3d3;
+        background-color: #fff;
+        .__post-item-num {
+            margin-right: 1rem;
+        }
+
+        .__post-item-content {
+            h5 a  {
+                text-decoration: none;
+                color: inherit;
+                cursor: pointer;
+            }
+
+            .__post-url {
+                font-size: 1.2rem;
+            }
+
+            .__post-link {
+                cursor: pointer;
+                color: #b92b27 !important;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        &-item {
+            width: 100%;
+        }
+    }
+}

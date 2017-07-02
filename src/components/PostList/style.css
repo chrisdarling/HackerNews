@@ -1,0 +1,26 @@
+.hacker-news-post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 10rem; }
+  .hacker-news-post-list-item {
+    display: flex;
+    width: 70vw;
+    padding: 2rem;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff; }
+    .hacker-news-post-list-item .__post-item-num {
+      margin-right: 1rem; }
+    .hacker-news-post-list-item .__post-item-content h5 a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer; }
+    .hacker-news-post-list-item .__post-item-content .__post-url {
+      font-size: 1.2rem; }
+    .hacker-news-post-list-item .__post-item-content .__post-link {
+      cursor: pointer;
+      color: #b92b27 !important; }
+  @media (max-width: 480px) {
+    .hacker-news-post-list-item {
+      width: 100%; } }
